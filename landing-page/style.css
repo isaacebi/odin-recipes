@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+}
+
+/* Logo */
+
+nav .logo {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    color: rgb(78, 10, 10);
+}
+
+/* header-ul */
+.nav-items li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+/* header */
+header {
+    background: url(res/main.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60vh;
+}
+
+header h1 {
+    color: antiquewhite;
+    margin-bottom: 12px;
+}
+
+header p {
+    color: antiquewhite;
+    width: 418px;
+}
