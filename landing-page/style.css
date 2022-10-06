@@ -52,3 +52,35 @@ header p {
     color: antiquewhite;
     width: 418px;
 }
+
+/* content-divider */
+.content-divider {
+    flex-wrap: wrap;
+    padding: 64px;
+    background-color: #e5e7eb;
+}
+
+/* content */
+.content .wrapper {
+    background: url(res/main2.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 530px;
+}
+
+.content h1 {
+    color: black;
+    margin-bottom: 12px;
+}
+
+.content p {
+    color: rgb(39, 1, 1);
+    width: 418px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.content .hero2-image {
+    margin-right: 50px;
+}
