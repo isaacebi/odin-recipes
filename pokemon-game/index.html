@@ -9,12 +9,55 @@
 </head>
 <body>
     <h1 class="heading">Fire, Water, and Grass</h1>
-    <div class="container">
+    <div class="score-container">
         <div class="wrapper">
-            <div class="score">
-                <div class="player-score">0</div>
-                <div style="margin: 0px 50px">-</div>
-                <div class="comp-score">0</div>
+            <div class="player-score">0</div>
+            <div class= "center" style="margin: 0px 50px">-</div>
+            <div class="comp-score">0</div>
+        </div>
+    </div>
+
+    <div class="message-container">
+        <div class="wrapper">
+            <div class="message"></div>
+        </div>
+    </div>
+
+    <div class="card-container">
+        <div class="wrapper">
+            <div class="card-image" data-image="fire">
+                <img src="res/fire.png" alt="fire" class="image">
+                <div class="card-text">Fire</div>
+            </div>
+            <div class="card-image" data-image="water">
+                <img src="res/water.png" alt="water" class="image">
+                <div class="card-text">Water</div>
+            </div>
+            <div class="card-image" data-image="Grass">
+                <img src="res/grass.png" alt="grass" class="image">
+                <div class="card-text">Grass</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dashboard">
+        <div class="wrapper">
+            <div class="dash-track">
+                <h2 class="dash-heading">Player</h2>
+                <div class="player-selection">
+                    <!--
+                        <p>Fire</p>
+                    -->
+                </div>
+            </div>
+
+            <div class="dash-track">
+                <h2 class="dash-heading">Computer</h2>
+                <div class="comp-selection">
+                    <!--
+                        <p>Water</p>
+                    -->                    
+                </div>
             </div>
         </div>
     </div>
