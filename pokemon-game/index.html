@@ -1,65 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokemon Game</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1 class="heading">Fire, Water, and Grass</h1>
-    <div class="score-container">
-        <div class="wrapper">
-            <div class="player-score">0</div>
-            <div class= "center" style="margin: 0px 50px">-</div>
-            <div class="comp-score">0</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="heading">Rock, Paper, And Scissors</h1>
+    <div class="container">
+      <div class="score">
+        <div class="player-score">0</div>
+        <div style="margin: 0px 50px">-</div>
+        <div class="computer-score">0</div>
+      </div>
+      <div class="message"></div>
+      <div class="d-flex">
+        <div class="card">
+          <div class="card-image" data-image="rock">
+            <img src="images/fire.png" alt="Rock" class="image" />
+          </div>
+          <div class="card-text">Rock</div>
         </div>
+        <div class="card">
+          <div class="card-image" data-image="paper">
+            <img src="images/water.png" alt="Paper" class="image" />
+          </div>
+          <div class="card-text">Paper</div>
+        </div>
+        <div class="card">
+          <div class="card-image" data-image="scissors">
+            <img src="images/grass.png" alt="Scissors" class="image" />
+          </div>
+          <div class="card-text">Scissors</div>
+        </div>
+      </div>
+      <div class="dashboard">
+        <div class="dashboard-side">
+          <h2 class="headindg-sub">Player</h2>
+          <div class="player-selection">
+            <!-- <p>Rock</p> -->
+          </div>
+        </div>
+        <div class="dashboard-side">
+          <h2 class="headindg-sub">Computer</h2>
+          <div class="computer-selection">
+            <!-- <p>Paper</p> -->
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="message-container">
-        <div class="wrapper">
-            <div class="message"></div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="wrapper">
-            <div class="card-image" data-image="fire">
-                <img src="res/fire.png" alt="fire" class="image">
-                <div class="card-text">Fire</div>
-            </div>
-            <div class="card-image" data-image="water">
-                <img src="res/water.png" alt="water" class="image">
-                <div class="card-text">Water</div>
-            </div>
-            <div class="card-image" data-image="Grass">
-                <img src="res/grass.png" alt="grass" class="image">
-                <div class="card-text">Grass</div>
-            </div>
-        </div>
-    </div>
-
-    <div class="dashboard">
-        <div class="wrapper">
-            <div class="dash-track">
-                <h2 class="dash-heading">Player</h2>
-                <div class="player-selection">
-                    <!--
-                        <p>Fire</p>
-                    -->
-                </div>
-            </div>
-
-            <div class="dash-track">
-                <h2 class="dash-heading">Computer</h2>
-                <div class="comp-selection">
-                    <!--
-                        <p>Water</p>
-                    -->                    
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
