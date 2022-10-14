@@ -1,56 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper Scissors</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1 class="heading">Rock, Paper, And Scissors</h1>
-    <div class="container">
-      <div class="score">
-        <div class="player-score">0</div>
-        <div style="margin: 0px 50px">-</div>
-        <div class="computer-score">0</div>
-      </div>
-      <div class="message"></div>
-      <div class="d-flex">
-        <div class="card">
-          <div class="card-image" data-image="rock">
-            <img src="images/fire.png" alt="Rock" class="image" />
-          </div>
-          <div class="card-text">Rock</div>
-        </div>
-        <div class="card">
-          <div class="card-image" data-image="paper">
-            <img src="images/water.png" alt="Paper" class="image" />
-          </div>
-          <div class="card-text">Paper</div>
-        </div>
-        <div class="card">
-          <div class="card-image" data-image="scissors">
-            <img src="images/grass.png" alt="Scissors" class="image" />
-          </div>
-          <div class="card-text">Scissors</div>
-        </div>
-      </div>
-      <div class="dashboard">
-        <div class="dashboard-side">
-          <h2 class="headindg-sub">Player</h2>
-          <div class="player-selection">
-            <!-- <p>Rock</p> -->
-          </div>
-        </div>
-        <div class="dashboard-side">
-          <h2 class="headindg-sub">Computer</h2>
-          <div class="computer-selection">
-            <!-- <p>Paper</p> -->
-          </div>
-        </div>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Type Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Fire Water Grass</h1>
+    </header>
+
+    <div class="score-board">
+        <div id="user-label" class="badge">user</div>
+        <div id="comp-label" class="badge">comp</div>
+        <span id="user-score">0</span>:<span id="user-score">0</span>
     </div>
 
-    <script src="main.js"></script>
-  </body>
+    <div class="results">
+        <p>Fire beat Grass. You win!</p>
+    </div>
+
+    
+    <div class="choices">
+        <!-- fire -->
+        <div class="choice" id="f">
+            <img src="images/fire.png" alt="">
+        </div>
+        <!-- water -->
+        <div class="choice" id="w">
+            <img src="images/water.png" alt="">
+        </div>
+        <!-- grass -->
+        <div class="choice" id="g">
+            <img src="images/grass.png" alt="">
+        </div>
+    </div>
+
+    <p id="action-message">Make your move.</p>
+</body>
 </html>
